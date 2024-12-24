@@ -4,7 +4,7 @@ const config = require('./config');
 async function fetchTMDBMovies(endpoint, page = 1, params = {}) {
     try {
         const queryParams = new URLSearchParams({
-            api_key: config.tmdb.apiKey,
+            api_key: 'c24113df2abdd79f92e92c696d366b25',
             with_original_language: 'ta',
             page: page.toString(),
             region: 'IN',
