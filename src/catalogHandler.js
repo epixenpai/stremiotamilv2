@@ -33,13 +33,6 @@ async function catalogHandler({ type, id, extra }) {
                     'primary_release_date.lte': new Date().toISOString().split('T')[0]
                 };
             
-            case 'english.mustwatch':
-                endpoint = '/trending/movie/week';
-                break;
-            case 'english.highgrossing':
-                endpoint = '/discover/movie';
-                extraParams = { sort_by: 'revenue.desc', with_original_language: 'en' };
-                break;
             case 'english.newott':
                 endpoint = '/movie/upcoming';
                 break;
