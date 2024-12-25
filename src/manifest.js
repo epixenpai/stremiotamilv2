@@ -1,8 +1,8 @@
 const manifest = {
     id: 'org.tamilmovies',
     version: '1.0.0',
-    name: 'Tamil Movies',
-    description: 'High-rated and trending Tamil movies from various OTT platforms',
+    name: 'Stremio-Tamil!',
+    description: 'High-rated and trending Tamil movies from various OTT platforms all at one place!',
     types: ['movie'],
     background: 'https://media1.giphy.com/media/U8lTznWkiDY2NlX65L/giphy.gif',
     catalogs: [
@@ -23,7 +23,7 @@ const manifest = {
             id: 'tamil.recent',
             name: 'Recent Tamil Movies',
             extra: [{ name: 'genre' }, { name: 'skip' }]
-        },
+        }
 
     resources: ['catalog'],
     idPrefixes: ['tt', 'tmdb']
