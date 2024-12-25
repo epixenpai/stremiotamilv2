@@ -23,7 +23,7 @@ async function catalogHandler({ type, id, extra }) {
             case 'tamil.toprated':
                endpoint = '/discover/movie';
                params = {
-                sort_by: 'popularity.desc', // Sorting by rating in descending order
+                sort_by: 'vote_average.desc', // Sorting by rating in descending order
                 'vote_count.gte': 100 // Ensuring only popular movies with a substantial number of votes are included
                };
                break;
