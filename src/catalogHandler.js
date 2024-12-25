@@ -4,7 +4,7 @@ const { getOTTAvailability } = require('./ott');
 async function catalogHandler({ type, id, extra }) {
     console.log('Catalog request:', { type, id, extra });
     
-    const page = extra.skip ? Math.floor(extra.skip / 20) + 1 : 1;
+    const page = extra.skip ? Math.floor(extra.skip / 25) + 1 : 1;
     let movies = [];
 
     if (type === 'movie') {
