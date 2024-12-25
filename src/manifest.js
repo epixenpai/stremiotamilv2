@@ -1,7 +1,7 @@
 const manifest = {
     id: 'org.tamilmovies',
-    version: '1.0.0',
-    name: 'Tamil Movies',
+    version: '2.0.0',
+    name: 'Stremio-Tamil',
     description: 'High-rated and trending Tamil movies from various OTT platforms',
     types: ['movie'],
     background: 'https://media1.giphy.com/media/U8lTznWkiDY2NlX65L/giphy.gif',
