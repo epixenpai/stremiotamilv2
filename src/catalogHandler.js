@@ -19,22 +19,21 @@ async function catalogHandler({ type, id, extra }) {
                     'vote_count.gte': 100
                 };
                 break;
+
             case 'tamil.toprated':
-                endpoint = '/discover/movie';
-                params = {
-                    sort_by: 'vote_average.desc',
-                    'vote_count.gte': 100
-                };
-                break;
+               endpoint = '/discover/movie';
+               params = {
+                sort_by: 'popularity.desc', // Sorting by rating in descending order
+                'vote_count.gte': 100 // Ensuring only popular movies with a substantial number of votes are included
+               };
+               break;
+
             case 'tamil.recent':
                 endpoint = '/discover/movie';
                 params = {
                     sort_by: 'release_date.desc',
                     'primary_release_date.lte': new Date().toISOString().split('T')[0]
                 };
-            
-            case 'english.newott':
-                endpoint = '/movie/upcoming';
                 break;
             default:
                 console.error('Invalid catalog:', id);
