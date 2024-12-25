@@ -4,7 +4,7 @@ const manifest = {
     name: 'Tamil Movies',
     description: 'High-rated and trending Tamil movies from various OTT platforms',
     types: ['movie'],
-    background: 'https://www.pngarts.com/files/2/Blue-Abstract-Lines-PNG-Transparent-Image.png',
+    background: 'https://media1.giphy.com/media/U8lTznWkiDY2NlX65L/giphy.gif',
     catalogs: [
         {
             type: 'movie',
